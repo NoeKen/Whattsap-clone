@@ -1,0 +1,7 @@
+{
+  "name": "Whatsap_Clone",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
