@@ -1,0 +1,22 @@
+ion-content{
+    --background: rgb(255,255,255);
+}
+.chat_box{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 5px;
+    color: black;
+}
+.infos{
+    justify-content: space-between;
+}
+.avatar_chat{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+.latest_message{
+    width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

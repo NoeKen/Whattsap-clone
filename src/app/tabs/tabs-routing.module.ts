@@ -8,27 +8,31 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
-        path: 'tab1',
-        loadChildren: () => import('../tab1/tab1.module').then(m => m.Tab1PageModule)
+        path: 'disc',
+        loadChildren: () => import('../disc/disc.module').then(m => m.DiscPageModule)
       },
       {
-        path: 'tab2',
-        loadChildren: () => import('../tab2/tab2.module').then(m => m.Tab2PageModule)
+        path: 'statuts',
+        loadChildren: () => import('../statuts/statuts.module').then(m => m.StatutsPageModule)
       },
       {
-        path: 'tab3',
-        loadChildren: () => import('../tab3/tab3.module').then(m => m.Tab3PageModule)
+        path: 'appels',
+        loadChildren: () => import('../appels/appels.module').then(m => m.AppelsPageModule)
+      },
+      {
+        path: 'camera',
+        loadChildren: () => import('../camera/camera.module').then(m => m.CameraPageModule)
       },
       {
         path: '',
-        redirectTo: '/tabs/tab1',
+        redirectTo: '/tabs/disc',
         pathMatch: 'full'
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/tabs/tab1',
+    redirectTo: '/tabs/disc',
     pathMatch: 'full'
   }
 ];
