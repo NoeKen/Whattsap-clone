@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="head">
+
+        <ion-back-button defaultHref="tabs/disc" slot="start"></ion-back-button>
+       <div class="prof_avatar">
+         
+        <ion-avatar>
+          <img src="../../assets/shapes.svg" alt="profile">
+        </ion-avatar>
+      </div>
+
+      <ion-title class="name">Alexandre</ion-title>
+    
+      <div class="other_items">
+        <ion-icon name="call" class="call"></ion-icon>
+        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+      </div>
+      
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+   
+  <div class="principale">
+    <div class="messages_content"  *ngFor="let message of messages" >
+      
+      <ion-badge  class = "received" *ngIf="message.userId !== userId" color="tertiary" >
+        {{message.text}} <span> {{message.date}}</span>
+      </ion-badge>
+
+      <ion-badge class= "send" *ngIf="message.userId == userId" color="primary">
+        {{message.text}} <span> {{message.date}} </span>
+      </ion-badge>
+    </div >
+  </div>
+</ion-content>
+
+<ion-footer >
+  <div class="footer">
+    <div class="icon_chat">
+      <ion-icon name="happy-outline"></ion-icon>
+    </div>
+      <ion-input [(ngModel)]="messageText" placeholder="Entrez votre texte" type = "text"></ion-input>
+    <div class="icon_chat" (click) = "sendMessage()" *ngIf="!null">
+      <ion-icon name="send"></ion-icon>
+    </div>
+  </div>
+</ion-footer>

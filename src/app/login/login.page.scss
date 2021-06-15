@@ -1,0 +1,23 @@
+ion-content{
+    --padding-top: 50px;
+}
+div{
+    text-align: center;
+}
+.ion-text{
+    margin-top: 15px;
+    font-size: small;
+    .h6{
+        color: blue;
+        margin-left: 10px;
+        margin-right: 8px;
+    }
+}
+.p{
+    font-size: small;
+    margin-top: 10px;
+    span{
+        color: blue;
+        margin-left: 10px;
+    }
+}

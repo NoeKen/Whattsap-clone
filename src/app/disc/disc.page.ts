@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {AngularFireDatabase} from '@angular/fire/database'
 
 @Component({
   selector: 'app-tab1',
@@ -7,6 +8,14 @@ import { Component } from '@angular/core';
 })
 export class DiscPage {
 
-  constructor() {}
+  constructor( public afDB: AngularFireDatabase) {}
+
+  add(){
+    this.afDB.list('User/').push({
+      pseudo:'Noe Ken'
+    })
+  }
+
+  
 
 }

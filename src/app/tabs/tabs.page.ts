@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { PopoverController } from '@ionic/angular';
+import { WhathmenuComponent } from '../popovers/whathmenu/whathmenu.component';
 
 @Component({
   selector: 'app-tabs',
@@ -7,6 +9,16 @@ import { Component } from '@angular/core';
 })
 export class TabsPage {
 
-  constructor() {}
+  constructor(public popoverCtrl: PopoverController) {}
+
+  async setting(ev: any) {  
+    const popover = await this.popoverCtrl.create({  
+        component: WhathmenuComponent,  
+        event: ev,  
+        animated: true,  
+        showBackdrop: true, 
+    });  
+    return await popover.present();  
+  } 
 
 }

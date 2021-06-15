@@ -1,23 +1,23 @@
 <ion-content [fullscreen]="true">
 
-  <div class="chat_box">
-    <div >
-      <ion-avatar class="avatar_chat">
+  <div class="chat_box" >
+    <div class="avatar_chat">
+      <ion-avatar class="prof_avatar" routerLink="/profile">
         <img src="../../assets/shapes.svg" alt="profile_image">
       </ion-avatar>
     </div>
-    <div class="infos">
+    <div class="infos" routerLink="/discussions">
       <div class="chat_info">
         <div class="name">
-          <ion-label> <b> Driss Ass </b> </ion-label>
+          <ion-label> <b> Noe Ken </b> </ion-label>
         </div>
         <div class="latest_message">
-          <ion-label class="subname"> Alexandre :</ion-label>
-          <ion-label class="message"> comment tu vas? </ion-label>
+           Alexandre :
+          comment tu vas? 
         </div>
       </div>
       <div class="time"> Today</div>
     </div>
   </div>
-
+  <ion-button routerLink="/dashboard" >dashboard</ion-button> 
 </ion-content>

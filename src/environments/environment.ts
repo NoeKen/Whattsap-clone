@@ -3,7 +3,16 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebaseConfig :{
+    apiKey: "AIzaSyC2Syp0hPjZr21jNLhskAmMsa3B_MonTWA",
+    authDomain: "whattsap-clone.firebaseapp.com",
+    projectId: "whattsap-clone",
+    storageBucket: "whattsap-clone.appspot.com",
+    messagingSenderId: "367325730070",
+    appId: "1:367325730070:web:1d8410de75d250fa2e2c37",
+    measurementId: "G-K8CMT68FHT"
+  }
 };
 
 /*

@@ -1,0 +1,29 @@
+
+<ion-content>
+  <ion-title><strong> Sign In to WhatsApp Messenger </strong></ion-title>
+  <form>    
+    <ion-item lines="full">
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="text" #email required ></ion-input>
+    </ion-item> 
+
+    <ion-item lines="full">
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="password" #password required  ></ion-input>
+    </ion-item>
+
+    <ion-row>
+      <ion-col> 
+      <ion-button type="submit" (click)="logIn(email, password)" expand="block">Login</ion-button>
+      </ion-col>
+    </ion-row>
+    <div> Or </div>
+    <ion-row>
+      <ion-col> 
+      <ion-button routerLink="/registration" expand="block">Register</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+  <div class="p">FORGOT PASSWORD?<span routerLink="/reset-pass-word">Reset it</span> </div>
+  <ion-button routerLink="/tabs/disc">back</ion-button>
+</ion-content>

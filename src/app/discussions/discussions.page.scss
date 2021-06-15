@@ -1,0 +1,53 @@
+.head{
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.prof_avatar{
+    width: 50px;
+    height: 50px;
+    img{
+        height: 50px;
+        width: 50px;
+    }
+}
+.prof_avatar{
+    display: flex;
+}
+
+ion-toolbar{
+    --background: rgb(7,94,84);
+    color: white;
+}
+.other_items{
+    display: inline-flex;
+    margin-top: 18px;
+}
+.call{
+    margin-right: 10px;
+}
+//==================================================
+//===================================================
+ion-footer{
+    background-color: rgb(14,88,70);
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    .icon_chat{
+        font-size: 30px;
+        color: white;
+        margin-top: 10px;
+    }
+    ion-input{
+        flex: 1;
+        background: white;
+        border-radius: 30px;
+        padding: 10px;
+        margin: 4px;
+        width: 10%;
+        color: black;
+    }
+}

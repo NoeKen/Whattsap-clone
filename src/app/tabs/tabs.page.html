@@ -1,10 +1,10 @@
-<ion-header class="header">
+<ion-header class="header" >
   <ion-toolbar>
     <div class="div_header">
       <ion-label><b>WhatsApp</b></ion-label>
       <div>
         <ion-icon class="icon_search" name="search"></ion-icon>
-        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+        <ion-icon name="ellipsis-vertical-outline" (click)="setting()"></ion-icon>
       </div>
     </div>
     <div>
@@ -16,9 +16,9 @@
 
 
 <ion-content>
-  <ion-tabs background="rgb(7,94,84)">
-
+  <ion-tabs>
     <ion-tab-bar slot="top">
+      
       <ion-tab-button tab="camera">
         <ion-icon name="camera-outline"></ion-icon>
       </ion-tab-button>
@@ -31,9 +31,10 @@
         <ion-label>STATUTS</ion-label>
       </ion-tab-button>
   
-      <ion-tab-button tab="appels">
-        <ion-label>APPELS</ion-label>
+      <ion-tab-button tab="params">
+        <ion-label>PARAM</ion-label>
       </ion-tab-button>
+     
     </ion-tab-bar>
   
   </ion-tabs>

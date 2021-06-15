@@ -1,5 +1,5 @@
 {
-  "name": "Whatsap_Clone",
+  "name": "Whatsap Clone",
   "version": "0.0.1",
   "author": "Ionic Framework",
   "homepage": "https://ionicframework.com/",
@@ -15,6 +15,7 @@
   "dependencies": {
     "@angular/common": "~12.0.1",
     "@angular/core": "~12.0.1",
+    "@angular/fire": "^6.1.5",
     "@angular/forms": "~12.0.1",
     "@angular/platform-browser": "~12.0.1",
     "@angular/platform-browser-dynamic": "~12.0.1",
@@ -28,6 +29,8 @@
     "@capacitor/keyboard": "1.0.0",
     "@capacitor/storage": "^1.0.0",
     "@ionic/angular": "^5.5.2",
+    "@ionic/storage": "^3.0.4",
+    "firebase": "^8.6.3",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.4"

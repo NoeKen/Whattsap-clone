@@ -3,10 +3,10 @@ import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { AppelsPage } from './appels.page';
+import { ParamsPage } from './params.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
-import { AppelsPageRoutingModule } from './appels-routing.module';
+import { ParamsPageRoutingModule } from './params-routing.module';
 
 @NgModule({
   imports: [
@@ -14,9 +14,9 @@ import { AppelsPageRoutingModule } from './appels-routing.module';
     CommonModule,
     FormsModule,
     ExploreContainerComponentModule,
-    RouterModule.forChild([{ path: '', component: AppelsPage }]),
-    AppelsPageRoutingModule,
+    RouterModule.forChild([{ path: '', component: ParamsPage }]),
+    ParamsPageRoutingModule,
   ],
-  declarations: [AppelsPage]
+  declarations: [ParamsPage]
 })
-export class AppelsPageModule {}
+export class ParamsPageModule {}

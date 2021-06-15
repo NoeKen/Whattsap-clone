@@ -16,8 +16,8 @@ const routes: Routes = [
         loadChildren: () => import('../statuts/statuts.module').then(m => m.StatutsPageModule)
       },
       {
-        path: 'appels',
-        loadChildren: () => import('../appels/appels.module').then(m => m.AppelsPageModule)
+        path: 'params',
+        loadChildren: () => import('../params/params.module').then(m => m.ParamsPageModule  )
       },
       {
         path: 'camera',
@@ -32,7 +32,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: '/tabs/disc',
+    redirectTo: '/login',
     pathMatch: 'full'
   }
 ];

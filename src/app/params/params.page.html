@@ -1,0 +1,41 @@
+<ion-content [fullscreen]="true">
+    <div class="empty_head">
+        <ion-icon name="exit-outline" slot="end" (click)="logOut()"></ion-icon>    
+    </div>
+    
+    <div class="params_content">
+        <div class="theme">
+            <div>
+                <ion-label color="primary">Theme</ion-label>
+                <div class="change_theme" >
+                    <label >Dark Mode</label>
+                    <ion-toggle (ionChange) = "themesChanges($event)" ></ion-toggle>
+                    <!--ion-card mode="ios" *ngIf="event.detail.checked">
+                        <div class="container">
+                        <div class="inner" *ngFor="let colorTheme of colorThemes" (click)="setTheme(colorTheme.color)">
+                        <div class="color" [style.background]="colorTheme.color">
+                        </div>
+                        <br>
+                               {{colorTheme.name}}
+                        </div>
+                        </div>
+                       
+                    </ion-card-->
+                </div>
+            </div>
+        </div>
+
+        <div class="Languages">
+            <div>
+                <div class="language">
+                    <ion-label primary >Langue</ion-label>
+                    <ion-select value="F" okText="Okay" cancelText="Dismiss" >
+                        <ion-select-option value="F">Francais</ion-select-option>
+                        <ion-select-option value="A">Anglais</ion-select-option>
+                    </ion-select>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</ion-content>

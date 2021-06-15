@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Platform } from '@ionic/angular';
+import { PopoverController } from '@ionic/angular/providers/popover-controller';
+//import { WhathmenuComponent } from './popovers/whathmenu/whathmenu.component';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +9,7 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor() {}
+
+  constructor(plateform:Platform) {}
+
 }
